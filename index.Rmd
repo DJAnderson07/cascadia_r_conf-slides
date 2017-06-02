@@ -375,4 +375,4 @@ By default, effect sizes are produced for all possible pairwise comparisons, but
 ---- .segue
 # Thanks!
 
-Slides available at: https://djanderson07.github.io/ncme_2017/
+Slides available at: https://djanderson07.github.io/cascadia_r_conf-slides/
