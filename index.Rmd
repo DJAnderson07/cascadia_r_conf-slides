@@ -24,7 +24,6 @@ strong {
 
 ```{r setup, include = FALSE}
 library(knitr)
-opts_knit$set(root.dir = "/Users/Daniel/CTL/Conferences/cascadia_r/slides/")
 ```
 ## Background
  Effect sizes quantify the magnitude of effects

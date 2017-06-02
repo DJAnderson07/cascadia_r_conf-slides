@@ -300,6 +300,56 @@ binned_plot(math ~ ethnicity, d, qtiles = seq(0, 1, .2))
 
 ![plot of chunk binned_es_plot_eth2](assets/fig/binned_es_plot_eth2-1.png)
 
+```r
+coh_d(math ~ ethnicity, d)
+```
+
+```
+##      ref_group   foc_group    estimate
+## 1        White       Asian  0.10689571
+## 2        White Two or More  0.30281232
+## 3        White    Hispanic  1.03147010
+## 4        White       Black  0.72127040
+## 5        White   AK Native  0.76483392
+## 6        White  Native Am.  0.84185433
+## 7        Asian Two or More  0.07471180
+## 8        Asian    Hispanic  0.72590767
+## 9        Asian       Black  0.39210777
+## 10       Asian   AK Native  0.29878405
+## 11       Asian  Native Am.  0.39455423
+## 12 Two or More    Hispanic  0.40811606
+## 13 Two or More       Black  0.21475724
+## 14 Two or More   AK Native  0.16297587
+## 15 Two or More  Native Am.  0.24174797
+## 16    Hispanic       Black  0.02423883
+## 17    Hispanic   AK Native  0.25579261
+## 18    Hispanic  Native Am.  0.30800593
+## 19       Black   AK Native  0.12256685
+## 20       Black  Native Am.  0.15962973
+## 21   AK Native  Native Am.  0.01700166
+## 22  Native Am.   AK Native -0.01700166
+## 23  Native Am.       Black -0.15962973
+## 24  Native Am.    Hispanic -0.30800593
+## 25  Native Am. Two or More -0.24174797
+## 26  Native Am.       Asian -0.39455423
+## 27  Native Am.       White -0.84185433
+## 28   AK Native       Black -0.12256685
+## 29   AK Native    Hispanic -0.25579261
+## 30   AK Native Two or More -0.16297587
+## 31   AK Native       Asian -0.29878405
+## 32   AK Native       White -0.76483392
+## 33       Black    Hispanic -0.02423883
+## 34       Black Two or More -0.21475724
+## 35       Black       Asian -0.39210777
+## 36       Black       White -0.72127040
+## 37    Hispanic Two or More -0.40811606
+## 38    Hispanic       Asian -0.72590767
+## 39    Hispanic       White -1.03147010
+## 40 Two or More       Asian -0.07471180
+## 41 Two or More       White -0.30281232
+## 42       Asian       White -0.10689571
+```
+
 ----
 ## Change reference group
 
@@ -351,11 +401,11 @@ By default, effect sizes are produced for all possible pairwise comparisons, but
 * `esvis` provides a simple interface to produce powerful visualizations
 
 # Future development
-* Interactions with `:`
-* Interactions via panel plotting
+* Interactions with `:` and via panel plotting
+* Including uncertainty
 * Others?
 
 ---- .segue
 # Thanks!
 
-Slides available at: https://djanderson07.github.io/ncme_2017/
+Slides available at: https://djanderson07.github.io/cascadia_r_conf-slides/
